@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> E-Commerce Store</title>
+    </head>
+    <body>
+        <h1>E-COMMERCE STORE</h1>
+        <div class="marquee"> 🥳🥳🥳40% OFFER STARTS FROM 09-JULY ENDS 27-JULY🥳🥳🥳</div><br>
+        <style>
+            body{
+                background-color: wheat;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .marquee{
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 50s linear infinite;
+            color: red;
+            }
+            .marquee:hover {
+            animation-play-state:paused;
+            }
+            @keyframes marquee {
+            0%   { transform: translateX(100%); }
+           100% { transform: translateX(-100%); }
+           }
+            h1{
+                text-align: center;
+                text-indent:56px;
+                font-size: xx-large;
+                font-style:italic;
+                background-color: black;
+                color: aliceblue;
+
+            }
+            .search-button {
+             padding: 10px 20px;
+             font-size: 16px;
+             background-color:black;
+             color: white;
+             border: none;
+             border-radius: 0 8px 8px 0;
+             cursor: pointer;
+             align-items: center;
+            }
+            .parent {
+             background-color:white;
+             padding:20px;
+             margin: 20px auto;
+             display: flex;
+             flex-wrap: wrap;
+            justify-content: center;
+             }
+
+            .child {
+            flex: 1 1 200px;
+            margin:auto; 
+            max-width: 200px;
+            margin: 2px;
+             }
+
+            .child img {
+             height: fit-content;
+             width:100px auto;
+             object-fit: cover;
+             display: block;
+             }
+
+            .image-border {
+             border: 3px black;
+             border-radius: 8px;
+             padding: 5px;
+             margin: 10px;
+             width: 200px;
+            }
+        
+            .comment-review{
+             text-align: center;
+             margin: 40px auto;
+             max-width: 600px;
+             }
+  
+            textarea {
+             width: 100%;
+             height: 100px;
+             margin: 10px ;
+             padding: 10px;
+             font-size: 14px;
+             border: 1px solid ;
+             border-radius: 6px;
+             }
+
+            button.submit-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: navy;
+            border-radius: 6px;
+        }
+        h2{
+            text-align: center;
+                text-indent:56px;
+                font-size: xx-large;
+                font-style:italic;
+                background-color: gray;
+                color: whitesmoke;
+        }
+            
+        
+
+</style>
+</body>
+    <table align="right">
+         <tr> 
+            <td><input type="text"></td>
+            <td><button style="display: block; "class="search-button">Cart</button>
+         </tr>
+    </table>
+    <table align="left">
+        <tr>
+            <td><input type="text"></td>
+            <td><button style="display: block;  "class="search-button">search</button></td>
+         </tr>    </table>    
+    <div>
+        <table class="image-border">
+            <tr>
+                <td>
+                    <image id="Mobile" image src="E:\HTML AND CSS\PROJECTS\images\Mobile.jPeg" class="image-border"></image>
+                    MOBILE<br>
+                     <button class="buy-button" onclick="buyProduct('MOBILE')">Buy Now</button>
+                </td>
+                <td>
+                    <image id="Laptop" image src="E:\HTML AND CSS\PROJECTS\images\Laptop.jPeg" class="image-border"><br></image>
+                    LAPTOP<br>
+                     <button class="buy-button" onclick="buyProduct('LAPTOP')">Buy Now</button>
+                </td>
+                <td>
+                    <image id="cloths" image src="E:\HTML AND CSS\PROJECTS\images\cloths.jPeg" class="image-border"><br></image>
+                    CLOTHING<br>
+                     <button class="buy-button" onclick="buyProduct('CLOTHING')">Buy Now</button>
+                </td>
+                <td>
+                    <image id="appliances" image src="E:\HTML AND CSS\PROJECTS\images\appliances.jPeg" class="image-border"><br></image>
+                    APPLIANCES<br>
+                     <button class="buy-button" onclick="buyProduct('APPLIANCES')">Buy Now</button>
+                </td>
+                <td>
+                    <image id="bags" image src="E:\HTML AND CSS\PROJECTS\images\bags.jPeg" class="image-border"><br></image>
+                    BAGS<br>
+                     <button class="buy-button" onclick="buyProduct('BAGS')">Buy Now</button>
+                </td>
+                <td>
+                    <image id="shoe" image src="E:\HTML AND CSS\PROJECTS\images\shoes.jPeg" class="image-border"><br></image>
+                    SHOES<br>
+                     <button class="buy-button" onclick="buyProduct('SHOES')">Buy Now</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="parent">
+    <div class="child">
+       <img src="E:\HTML AND CSS\PROJECTS\images\ac.jpeg" alt="AC"><br>
+        AC<br>
+         <button class="buy-button" onclick="buyProduct('AC')">Buy Now</button><br>
+       OFFER UPTO 60%  
+    </div>
+    <div class="child">
+        <img src="E:\HTML AND CSS\PROJECTS\images\wm.jpeg" alt="Washing machine"><br>
+        WASHING MACHINE<br>
+         <button class="buy-button" onclick="buyProduct('WASHING MACHINE')">Buy Now</button><br>
+       OFFER UPTO 50%
+    </div>
+    <div class="child">
+        <img src="E:\HTML AND CSS\PROJECTS\images\fridge.jpeg" alt="Fridge"><br>
+        FRIDGE<br>
+         <button class="buy-button" onclick="buyProduct('FRIDGE')">Buy Now</button><br>
+        BUY ONE GET ONE
+    </div>
+    <div class="child">
+        <img src="E:\HTML AND CSS\PROJECTS\images\sofa.jpeg" alt="sofa"><br>
+        SOFA<br>
+         <button class="buy-button" onclick="buyProduct('SOFA')">Buy Now</button><br>
+        BUY ONE GET ONE FREE <br>
+    </div>
+</div>
+<div class="comment-review">
+    <h2>Leave a Comment</h2>
+    <textarea placeholder="Write your comment here............"></textarea>
+    <br>
+    <h2>Leave a Review</h2>
+    <textarea placeholder="Write your review here......."></textarea>
+    <br>
+    <button class="submit-button">Submit</button>
+<h2>
+    <br>ENQUIRE<br>
+    Email id:E-commerce@gmail.com<br>
+    Location:Besantnagar<br>chennai-609901
+</h2>
+</div>
+</html>
